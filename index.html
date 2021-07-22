@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text.css" href="formulario.css" media="screen">
+    <title>Investimentos Forms</title>
+</head>
+<body>
+    
+    <div class="campo">
+        <h1 id="titulo">Informacoes sobre Investimentos</h1>
+        <p id="subtitulo">Preencha abaixo as informacoes sobre Investimentos</p>
+        <br>
+
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label><strong>voce investe a quanto tempo?</strong></label>
+                <select id="VIQT" required>
+                    <option selected disabled value="">Tempo investindo</option>
+                    <option>1-2 anos</option>
+                    <option>2-5 anos</option>
+                    <option>+5 anos</option>
+                </select>
+            <div class="campo">
+                <label><strong>Qual seu nivel de investidor?</strong></label>
+                <select id="QNIC">
+                    <option selected disabled value="">Nivel de investidor</option>
+                    <option>Conservador</option>
+                    <option>Medio</option>
+                    <option>Agressivo</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label><strong>Quanto esta o seu patrimonio atualmente?</strong></label>
+                <select id="QSPA" required>
+                    <option selected disabled value="">patrimonio atual</option>
+                    <option>1k-5k</option>
+                    <option>5k-10k</option>
+                    <option>10k-25k</option>
+                    <option>25k-50k</option>
+                    <option>50k-100k</option>
+                    <option>+100k</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label><strong>Quanto voce investe por mes?</strong></label>
+                <input type="text" name="Quanto voce investe por mes?" id="QIPM">
+                <input type="submit" for="QIPM">
+            </div>
+
+            <div class="campo">
+                <label><strong>Tem reserva de emergencia? Se sim, quanto?</strong></label>
+                <input type="checkbox" name="Tem reserva de emergencia?" id="TRE">
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label><strong>Email para receber noticias sobre investimentos</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <button class="botao" type="submit">Concluir</button>
+
+    </form>
+
+</body>
+</html>
